@@ -115,6 +115,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                                 return Column(
                                   children: [
                                     InkWell(
+                                      // when search and click on any country name to get it's record
                                       onTap: (){
                                         Navigator.push(context, MaterialPageRoute(builder: (context) =>
                                             DetailScreen(
@@ -143,6 +144,8 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                                   ],
                                 );
                               }
+
+                              // if search is not valid then show empty container
                               else{
                                 return Container();
                               }

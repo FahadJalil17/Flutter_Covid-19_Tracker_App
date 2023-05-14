@@ -1,4 +1,3 @@
-import 'package:covid_19_tracker/View/countries_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'View/splash_screen.dart';
@@ -20,8 +19,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.blueGrey,
       ),
-      // home: SplashScreen(),
-      home: CountriesListScreen(),
+      home: SplashScreen(),
     );
   }
 }
